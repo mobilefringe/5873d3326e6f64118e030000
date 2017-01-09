@@ -359,9 +359,11 @@
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">
-                                    <a href="/pages/tecumseh-customer-service">GUEST SERVICES</a>                                
-                                </span>
+                                <span class="site_map_title">GUEST SERVICES</span>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/westbrook-guest-services' target='_self'>Guest Services</a>
+                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                                <a class="site_map_submenu" href='/pages/westbrook-security' target='_self'>Security</a>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
@@ -380,11 +382,6 @@
                                 <a class="site_map_submenu" href='/pages/tecumseh-accessibility' target='_self'>Accessibility</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/tecumseh-contact-us' target='_self'>Contact Us</a>
-                            </div>
-                            <div class="nav_sitemap_item">
-                                <span class="site_map_title">
-                                    <a href="/posts">BLOG</a>
-                                </span>
                             </div>
                         </div>
                     </div>
