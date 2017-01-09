@@ -2,7 +2,9 @@
     #error_msg {
         text-align: center;
     }
-
+    label {
+        display: block;
+    }
     .contact-inputs{
         width: 80%;    
     }
