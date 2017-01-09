@@ -114,6 +114,62 @@
                 }
             }); 
         }
+        
+        function submitMSG(){
+            if ($("#cm-firstname").val() == ""){
+                alert("Please Enter First Name");
+                $("#cm-firstname").focus();
+                return false;
+            } else if ($("#cm-lastname").val() == ""){
+                alert("Please Enter Last Name");
+                $("#cm-lastname").focus();
+                return false;
+            } else if ($("#email-newsletter").val() == ""){
+                alert("Please Enter Email");
+                $("#email-newsletter").focus();
+                return false;
+            } else if(!isValidEmailAddress($("#email-newsletter").val())){
+                alert("Please Enter a valid email address");
+                $("#email-newsletter").focus();
+                return false;
+            } else if ($("#phoneNumber").val() == ""){
+                alert("Please Enter Phone Number");
+                $("#phoneNumber").focus();
+                return false;
+            } else if ($("#message").val() == ""){
+                alert("Please Enter message");
+                $("#message").focus();
+                return false;
+            }
+
+            $('#cm-name').val($('#cm-firstname').val()+ ' ' +$('#cm-lastname').val());
+            var values = {};
+             $.each($('#msg-contact').serializeArray(), function(i, field) {
+                 values[field.name] = field.value;
+             });
+            
+            $.ajax({
+                url : "/verify_captcha",
+                type: "POST",
+                data : {
+                    "g-recaptcha-response": values['g-recaptcha-response'],
+                    "secret_key": "6LduhgITAAAAANNWQjvEjqsi_cC0CrfNaqsg7e3u"
+                },
+                success: function(data, textStatus, jqXHR)
+                {
+                    if(data == "true"){
+                        $.post( "/send_contact_email", { 'send_to': "westbrookmallinfo@20vic.com", 'subject': "Customer Feedback - Westbrook Mall", 'body': {"Name": $('#cm-name').val(), "Email" : $('#email-newsletter').val(), "Phone Number":$('#phoneNumber').val(),"Message":$('#message').val()} } );
+                        $("#msg-contact").submit();
+                    } else{
+                        $('#captcha_validation').show();
+                    }
+                  
+                },
+                error: function (jqXHR, textStatus, errorThrown)
+                {
+                }
+            });
+        }
         loadMallDataCached(renderAll); 
     })
 </script>
