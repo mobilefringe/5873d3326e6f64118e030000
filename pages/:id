@@ -49,7 +49,7 @@
         <div class="line_break"></div>    
     </div>
     <div id="page_body"></div>
-    <div id="contact_form">
+    <div id="contact_form" class="hidden_now">
         <form id="msg-contact" accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tuktjk/"  enctype="multipart/form-data"  method="post">
             <input id="cm-name" type="hidden" name="cm-name" />
             <div class="row-fluid">
@@ -104,6 +104,7 @@
                 $('#page_body').html(data.body);
                 if(slug === "westbrook-contact-us") {
                     $("#contact_us").show();
+                    $("#contact_form").show();
                 }
                 if(slug === "westbrook-accessability") {
                     $("#page_title").html("Accessibility");
