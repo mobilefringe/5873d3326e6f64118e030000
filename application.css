@@ -1995,64 +1995,36 @@ td.stores_pin{
 
 
 /********* 20Vic contest form *********/
-#contest_form_20vic label{
-    font-weight:500;
-}
-#contest_form_20vic input {
-    max-width:300px;
-    width: 96%;
-}
-#contest_form_20vic input#postal_code{
-    width:90%;
-}
-#contest_form_20vic .info_check{
-    width:auto;    
-}
-#contest_form_20vic .contact_btn{
-    max-width: 200px;
-    background-color: #31b3a9;
-    font-size: 1.5em;
-    text-align: center;
-    height: 55px;
-    display: block;
-    margin-bottom: 10px;
-    line-height: 2.3em;
-    color: white;
-    border: none;
-    font-family: futura_condensed;
-    text-transform: uppercase;   
-}
-#contest_form_20vic .contest_checkbox{
-    font-size: 10pt;    
-}
-.contest_page #contest_description{
-    font-size: 16pt;
-    color: #6D6F71;
-    font-family: futura_medium;  
-    padding: 15px 5px 10px 5px;
-}
-
-#agree_terms{
-    margin: -4px 0 0;    
-}
-
-
-/* ***PROPERTY CSS*** */
 .brand_nav{
-    background-color: #5099b6;
-    position:relative;
+    background-color: #ffcc4e;
 }
-.promo_date {
-    color: #5099b6;
-    font-family: futura_condensed;
-    font-size: 18pt;
+#centre_logo{
+    bottom:0px;
 }
-.check_hours {
-    color: #000;
+.btn-nav{
+    color:  #3D441E; 
 }
-.check_hours:hover {
-    color: #000;
+
+.feature_label{
+    background-color: #de761c;
 }
+
+.stores_table_headers{
+    background-color: #de761c;
+}
+
+.controls{
+    background-color: #4d413e;
+}
+
+.hour_title, .check_hours{
+    color:#4d413e;
+}
+
+.hour_info{
+    color:#f57b2b;    
+}
+
 #site_nav li button:focus{
     background-color: #e5f5fd;
 }
@@ -2062,29 +2034,6 @@ td.stores_pin{
     background: #e5f5fd; 
 }
 
-.feature_label, .long_feature_label {
-    background-color: #5099b6;
-}
-
-ul.store_tabs{
-    width: auto;
-}
-
-.store_tabs li{
-    width: auto;
-}
-
-ul.store_tabs li a,
-ul.store_tabs li a:hover,
-ul.store_tabs li.active a,
-ul.store_tabs li.active a:hover{
-    background-color: #5099b6;
-}
-
-.stores_table_headers{
-    background-color: #5099b6;
-}
-
 .stores_table_headers .pull-right{
     color: #ededed;
 }
@@ -2092,39 +2041,13 @@ ul.store_tabs li.active a:hover{
 .stores_table_headers .pull-right .arrow-up{
     border-bottom-color: #ededed;
 }
-.store_btn {
-    background-color: #5099b6;    
-}
-.controls{
-    background-color: #5099b6;
+
+.store_btn{
+    background-color:#ffcc4e;   
 }
 
-.mobile_header .background_bar{
-    background-color: #5099b6;
-}
-.blogpost h1 a:hover {
-    text-decoration: none;
-}
-.blogpost img {
-    margin-bottom: 10px;
-    max-width: 100%;
-}
-.blogpost .back_to img {
-    margin-bottom: 0;
-}
-.blogpost h2 a {
-    color: inherit;
-    text-decoration: none;
-}
-.blogpost_content{
-    max-height:120px;
-    overflow:hidden;
-}
-.blog_preview p.preview_text, .blogpost_content{
-    max-height: 75px;
-    overflow: hidden;
-    text-overflow-multiline: ellipsis;
-    position: relative;
+#contest_form_20vic .contact_btn{
+    background-color: #de761c;  
 }
 .social_icon {
     color: #de761c;
