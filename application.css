@@ -1105,7 +1105,7 @@ a.btn-prime {
     text-decoration: none;
 }
 
-.check_hours a:hover {
+.check_hours:hover {
     color: inherit;
 }
 .check_hours{
