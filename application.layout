@@ -118,7 +118,7 @@
                             <a href='/pages/westbrook-mall-info'>Mall Info</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/westbrook-accessibility'>Accessibility</a>
+                            <a href='/pages/westbrook-accessability'>Accessibility</a>
                         </li>        
                         <li class="mobile_menu_item">
                           <a href='/pages/westbrook-contact-us'>Contact Us</a>
@@ -200,7 +200,7 @@
                                 <a class="nav_a" href='/pages/westbrook-mall-info' target='_self'><span>Mall Info</span></a>                              
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/westbrook-accessibility' target='_self'><span>Accessibility</span></a>                      
+                                <a class="nav_a" href='/pages/westbrook-accessability' target='_self'><span>Accessibility</span></a>                      
                             </li>
                             <li>
                                 <a class="nav_a" href='/pages/westbrook-contact-us' target='_self'><span>Contact Us</span></a>  
