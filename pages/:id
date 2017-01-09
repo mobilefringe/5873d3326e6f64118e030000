@@ -114,7 +114,6 @@
                     $("#error_msg").fadeIn("fast");
                 }
             }); 
-            submitMSG();
         }
         
         function submitMSG(){
