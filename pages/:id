@@ -95,7 +95,7 @@
 <script>
     $(document).ready(function(){
         function renderAll(){
-             init();
+            init();
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var pages_json = "//www.westbrookmall.com//pages/" + slug + ".json"
@@ -113,6 +113,7 @@
                     $("#error_msg").fadeIn("fast");
                 }
             }); 
+            submitMSG();
         }
         
         function submitMSG(){
