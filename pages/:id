@@ -83,7 +83,7 @@
                Captcha is not valid!
             </div>
             <input class="btn btn-success " name="commit" onclick="submitMSG()" value="Submit" style="width:325px; height: 45px;" />
-            <div class="line_break">&nbsp;</div>
+            <div class="line_break"></div>
             <!-- Captcha END -->
         </form>
     </div>
