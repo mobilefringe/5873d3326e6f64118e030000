@@ -80,7 +80,6 @@
             </div>
            <div class="g-recaptcha" data-sitekey="6LduhgITAAAAAOuswnYWavEr1XmVyd-L4iAz-ElA"></div>
            <div id="captcha_validation" style="color:red; margin-top:10px; margin-bottom:10px; font-weight:bold; display:none">
-               Captcha is not valid!
            </div>
             <input class="btn btn-success " name="commit" onclick="submitMSG()" value="Submit" style="width:325px; height: 45px;" />
             <div class="line_break"></div>
