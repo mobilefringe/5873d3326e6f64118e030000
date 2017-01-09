@@ -2,6 +2,23 @@
     #error_msg {
         text-align: center;
     }
+
+    .contact-inputs{
+        width: 80%;    
+   
+    }
+    .span6{
+        margin: 0;
+    }
+    textarea{
+        margin-bottom:20px;
+        width: 80%; 
+        height:200px; 
+        resize:none;
+    }
+    .g-recaptcha{
+        margin-bottom: 20px;
+    }
 </style>
 <div class="page_body">
     <h1 class="page_title" id="page_title"></h1>
