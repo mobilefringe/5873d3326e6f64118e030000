@@ -79,7 +79,7 @@
                     </button>
                     <ul class="dropdown-menu bottom">                                
                         <li class="mobile_menu_header" >
-                            <a href='' >STORES</a>
+                            <a>STORES</a>
                         </li>
                         <li class="mobile_menu_item">
                             <a href='/stores'>Store Directory</a>
@@ -88,14 +88,20 @@
                             <a href='/map'>Shopping Map</a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/promotions' >PROMOTIONS</a>
+                            <a href='/promotions'>PROMOTIONS</a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/events' >EVENTS</a>
+                            <a href='/events'>EVENTS</a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/pages/tecumseh-customer-service' >GUEST SERVICES</a>
-                        </li>      
+                            <a>GUEST SERVICES</a>
+                        </li>
+                        <li class="mobile_menu_item" >
+                            <a href='/pages/westbrook-guest-services' >Guest Services</a>
+                        </li>
+                        <li class="mobile_menu_item" >
+                            <a href='/pages/westbrook-security'>Security</a>
+                        </li>
                         <li class="mobile_menu_header" >
                             <a href='/jobs' >CAREERS</a>
                         </li>         
@@ -106,20 +112,17 @@
                             <a href='/hours'>Shopping Hours</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/tecumseh-specialty-leasing'>Leasing</a>
+                            <a href='/pages/westbrook-leasing'>Leasing</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/tecumseh-mall-info'>Mall Info</a>
+                            <a href='/pages/westbrook-mall-info'>Mall Info</a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/tecumseh-accessibility'>Accessibility</a>
+                            <a href='/pages/westbrook-accessibility'>Accessibility</a>
                         </li>        
                         <li class="mobile_menu_item">
-                          <a href='/pages/tecumseh-contact-us'>Contact Us</a>
+                          <a href='/pages/westbrook-contact-us'>Contact Us</a>
                         </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/posts' >BLOG</a>
-                        </li> 
                     </ul>
                     <a id="mobile_logo" href="/">
                         <img class="mobile_logo" ALT="mobile_logo" src="//www.mallmaverick.com/system/sites/logo_images/000/000/039/original/Untitled-3.png?1399497822"/>
@@ -171,7 +174,15 @@
                         <button class="btn-nav" onclick="window.location.href='/events'">EVENTS</button>
                     </li>
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/pages/tecumseh-customer-service'">GUEST SERVICES</button>
+                        <button class="btn-nav" data-toggle="dropdown">GUEST SERVICES</button>
+                        <ul class="dropdown-menu">                            
+                            <li>
+                                <a class="nav_a" href='/pages/westbrook-guest-services' target='_self'><span>Guest Services</span></a> 
+                            </li>
+                            <li>
+                                <a class="nav_a" href='/pages/westbrook-security' target='_self'><span>Security</span></a>               
+                            </li>
+                        </ul>
                     </li>            
                     <li>                        
                         <button class="btn-nav" onclick="window.location.href='/jobs'">CAREERS</button>
@@ -183,21 +194,18 @@
                                 <a class="nav_a" href='/hours' target='_self'><span>Shopping Hours</span></a>                                
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/tecumseh-specialty-leasing' target='_self'><span>Leasing</span></a>                                
+                                <a class="nav_a" href='/pages/westbrook-leasing' target='_self'><span>Leasing</span></a>                                
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/tecumseh-mall-info' target='_self'><span>Mall Info</span></a>                              
+                                <a class="nav_a" href='/pages/westbrook-mall-info' target='_self'><span>Mall Info</span></a>                              
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/tecumseh-accessibility' target='_self'><span>Accessibility</span></a>                      
+                                <a class="nav_a" href='/pages/westbrook-accessibility' target='_self'><span>Accessibility</span></a>                      
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/tecumseh-contact-us' target='_self'><span>Contact Us</span></a>                            
+                                <a class="nav_a" href='/pages/westbrook-contact-us' target='_self'><span>Contact Us</span></a>  
                             </li>
                         </ul>
-                    </li>
-                    <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/posts'">BLOG</button>
                     </li>
                 </ul>
                 <hr>
