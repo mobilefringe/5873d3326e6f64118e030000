@@ -28,6 +28,9 @@
                 if(slug === "tecumseh-contact-us") {
                     $("#contact_us").show();
                 }
+                if(slug === "westbrook-accessability") {
+                    $("#page_title").html("Accessibility");
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#error_msg").fadeIn("fast");
