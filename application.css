@@ -756,7 +756,7 @@ a.btn-nav {
     padding-bottom: 10px;
     z-index: 900;
     position: absolute;
-    top: 0;
+    top: 37px;
 }
 #centre_logo img {
     max-width: 95%;
