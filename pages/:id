@@ -42,7 +42,7 @@
                     <input class="contact-inputs" id="cm-lastname" name="cm-lastname" type="text" required/>
                 </div>
             </div>
-            <div class="row">
+            <div class="row-fluid">
                 <div class="col-md-6">
                     <label for="email-newsletter">Email*</label>
                     <input class="contact-inputs" id="email-newsletter" name="cm-tuktjk-tuktjk" type="email" required />
