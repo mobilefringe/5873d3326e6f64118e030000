@@ -15,7 +15,7 @@ function init() {
     
     var property = getPropertyDetails().contact_phone;
     console.log(property);
-    renderGeneral('#property_phone_container', '#property_phone_template', property);
+    renderPropertyPhone('#property_phone_container', '#property_phone_template', property);
     
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
@@ -58,6 +58,18 @@ function renderGeneral(container, template, collection){
         item_rendered.push(repo_rendered);
     });
     $(container).html(item_rendered.join(''));
+}
+
+function renderPropertyPhone(property_phone_container, property_phone_template, property){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(property_phone_template).html();
+    Mustache.parse(template_html); 
+    $.each(property, function( key, val ) {
+        var repo_rendered = Mustache.render(template_html,val);
+        item_rendered.push(repo_rendered);
+    });
+    $(property_phone_container).html(item_rendered.join(''));
 }
 
 function renderBanner(home_banner_template, home_banner, banners){
