@@ -175,7 +175,7 @@
                     </li>
                     <li>                        
                         <button class="btn-nav" data-toggle="dropdown">GUEST SERVICES</button>
-                        <ul class="dropdown-menu" style="left:auto;">                            
+                        <ul class="dropdown-menu" style="left: 0;">                            
                             <li>
                                 <a class="nav_a" href='/pages/westbrook-guest-services' target='_self'><span>Guest Services</span></a> 
                             </li>
