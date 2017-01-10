@@ -34,6 +34,10 @@
         background-repeat: repeat-x;
         border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
     }
+    .btn-success:hover {
+        background-color: #51a351;
+        
+    }
     .g-recaptcha{
         margin-bottom: 20px;
     }
