@@ -216,7 +216,7 @@ function renderJobs(container, template, collection){
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
         }
         else{
-            val.store_name = "Tecumseh Mall";
+            val.store_name = "Westbrook Mall";
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
