@@ -88,7 +88,7 @@
             </div>
             <div class="row">
                 <div class="col-md-10">
-                    <input class="btn btn-success " name="commit" onclick="submitMSG()" value="Submit" style="width:325px; height: 45px;" />      
+                    <input class="btn btn-success " name="commit" onclick="submitMSG()" value="Submit" style="width:355px; height: 55px;" />      
                 </div>
             </div>
             <div class="line_break"></div>
