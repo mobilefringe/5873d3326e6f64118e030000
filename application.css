@@ -1534,8 +1534,8 @@ td.stores_pin{
     width: 100%;
     height: 100%;
 }
-.page_body form input,
-.page_body form select {
+.page_body #contest_form input,
+.page_body #contest_form select {
     margin-bottom: 10px;
     padding: 4px 6px;
     display: block;
