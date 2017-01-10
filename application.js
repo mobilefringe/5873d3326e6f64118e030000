@@ -327,7 +327,7 @@ function renderEventDetails(container, template, collection){
             }
         }
         else{
-            val.store_name = "Tecumseh Mall";
+            val.store_name = "Westbrook Mall";
             val.image_url = "";
         }
         
