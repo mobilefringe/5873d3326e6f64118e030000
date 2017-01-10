@@ -319,17 +319,11 @@
                         </form>
                     </div>
                     <div class="social_links_mobile visible-xs-block">
-                        <a href="//www.facebook.com/tecumsehmallwindsor" target="_blank">
+                        <a href="//www.facebook.com/WestbrookMall" target="_blank">
                             <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
                         </a>
-                        <a href="//twitter.com/tecumsehmall" target="_blank">
+                        <a href="//twitter.com/WestbrookMall" target="_blank">
                              <i class="fa fa-twitter social_icon" aria-hidden="true"></i>    
-                        </a>
-		                <a href="//www.youtube.com/channel/UCk6W7ocu-tzzFZgw7jMuYfw" target="_blank">
-		                    <i class="fa fa-youtube social_icon" aria-hidden="true"></i>
-	                    </a>
-                        <a href="//www.instagram.com/tecumsehmall" target="_blank">
-                            <i class="fa fa-instagram social_icon" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
