@@ -1553,7 +1553,7 @@ td.stores_pin{
     transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 .page_body #contest_form textarea {
-    width: 80%; 
+    width: 450px; 
     height: 200px;    
 }
 #error_msg {
