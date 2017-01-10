@@ -323,8 +323,8 @@ legend{
 //     border: solid 1px gray; 
 // }
 
-#site_nav ul.dropdown-menu{
-    border-radius:0;
+#site_nav ul.dropdown-menu {
+    width: 160px;
     background-color: white;
     top: 25px;
     left: 0px;
