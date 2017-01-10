@@ -318,11 +318,6 @@ legend{
 #site_nav li button.btn_nav:last-child{
     padding-right: 0px;
 }
-
-// #site_nav li button:focus{
-//     border: solid 1px gray; 
-// }
-
 #site_nav ul.dropdown-menu {
     width: 160px;
     background-color: white;
@@ -330,6 +325,7 @@ legend{
     left: 0px;
     border: solid 1px gray;
     border-radius: 5px;
+    min-width: 200px;
 }
 
 
