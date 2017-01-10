@@ -13,7 +13,7 @@ function init() {
 
     renderHomeHours();
     
-    var property = getPropertyDetails();
+    var property = getPropertyDetails().contact_phone;
     console.log(property);
     renderGeneral('#property_phone_container', '#property_phone_template', property);
     
