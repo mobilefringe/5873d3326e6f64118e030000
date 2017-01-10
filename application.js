@@ -363,7 +363,7 @@ function renderPromotions(container, template, collection){
             val.image_url = store_details.store_front_url_abs;
         }
         else{
-            val.store_name = "Tecumseh Mall";
+            val.store_name = "Westbrook Mall";
             // val.image_url = "";
         }
         
