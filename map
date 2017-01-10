@@ -37,6 +37,9 @@
 		height: 500px;
 		margin-bottom: 20px;
 	}
+	.mark {
+        background-color: transparent;
+    }
 	@media(max-width: 500px){
 		#parent_div{
 			
