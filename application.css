@@ -1708,16 +1708,13 @@ td.stores_pin{
         top: 20px;
         right: 20px;
     }
-    
     #site_nav li button{
         padding: 3px 10px;
     }
-    
     .container_body{
         min-height: 100%;
         max-width:100%;    
     }
-    
     .right_box{
         position: relative;
         right: 0px;
@@ -1725,15 +1722,10 @@ td.stores_pin{
         float: right;
         margin-top: 10px;    
     }
-    
     .hour_box{
         width: 65%;
         height: 227px;
     }
-    
-    // .hour_box .feature_label {
-    //     padding: 17px 2% 0;
-    // }
     .hour_box .check_hours {
         padding: 0;
         padding-left: 10px;
@@ -1806,7 +1798,11 @@ td.stores_pin{
     .bottom_nav .nav_site_map .site_map_submenu{
         padding-left: 5px;
     }
-    
+    .bottom_nav .nav_site_map .site_map_cols {
+        column-count: 4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+    }
     .footer {
         height: auto;
     }
