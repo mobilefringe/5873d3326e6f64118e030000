@@ -1570,6 +1570,7 @@ td.stores_pin{
     height: 200px;    
 }
 .page_body #contest_form input[type="submit"] {
+    max-width: 100%;
     background-color: #cecece;
     color: #fff;
      transition: background linear 0.2s;
