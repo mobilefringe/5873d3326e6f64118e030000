@@ -13,6 +13,9 @@ function init() {
 
     renderHomeHours();
     
+    var property = getPropertyDetails;
+    console.log(property);
+    renderGeneral('#', '#', property)
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
     renderFeatureItems('#feature_item','#feature_item_template', one_item);
