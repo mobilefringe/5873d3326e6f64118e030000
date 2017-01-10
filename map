@@ -61,7 +61,7 @@
 	</select>
 	<div id="parent_div">
 		<div id="zoom_container_directory">
-			<img alt="Store Directory Map" id="map_image" src="https://www.mallmaverick.com/system/properties/maps/000/000/040/original/WBM-Site-Plan_2016.jpg?1454088377"/>
+			<img alt="Store Directory Map" id="map_image" src=""/>
 			<div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>
 		</div>
 	</div>
@@ -75,7 +75,7 @@
             renderStoreList('#store_select_container','#store_select_template', stores, "stores");
             $(".mapper").prepend("<option selected>Select a Store</option>");
 
-            
+            $("#map_image").attr("src", getPNGMapURL());
             $('#map_image').smoothZoom({
     			initial_POSITION: "0 0",
     	    	pan_BUTTONS_SHOW: "NO",
