@@ -1561,6 +1561,9 @@ td.stores_pin{
     background-color: #cecece;
     color: #fff;
 }
+.page_body #contest_form input[type="submit"]:hover {
+    background-color: #afafaf;
+}
 #error_msg {
     text-align: center;
 }
