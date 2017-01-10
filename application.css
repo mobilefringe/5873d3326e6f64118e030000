@@ -1557,6 +1557,10 @@ td.stores_pin{
     width: 100%;
     height: 200px;    
 }
+.page_body #contest_form input[type="submit"] {
+    background-color: #cecece;
+    color: #fff;
+}
 #error_msg {
     text-align: center;
 }
