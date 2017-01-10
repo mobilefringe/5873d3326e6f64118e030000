@@ -4,7 +4,7 @@ function init() {
     $("#brand_select").prepend("<option selected>Brands</option>");
     
     $("#brand_select").on('change', function() {            
-        if ($(this).val() != ""){
+        if ($(this).val() !== ""){
             window.location = "/stores/"+ $(this).val();    
         }
     });  
