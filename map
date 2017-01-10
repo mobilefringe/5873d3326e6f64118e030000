@@ -40,17 +40,6 @@
 	.mark {
         background-color: transparent;
     }
-	@media(max-width: 500px){
-		#parent_div{
-			
-		}
-		.trim_screen{
-			width: 90%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-
 </style>
 <div>
 	<h1 class="page_title">Centre Map</h1>
