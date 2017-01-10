@@ -33,7 +33,6 @@
     	     	responsive_maintain_ratio: false,
     	     	zoom_MAX: 300,
     	     	zoom_MIN: 0
-    
     		});
         	show_png_pin(".mapper", "#map_image");
         }
