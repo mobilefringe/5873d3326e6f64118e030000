@@ -1,3 +1,54 @@
+<style>	
+	.smooth_zoom_preloader {
+		background-image: url(assets/preloader.gif);
+	}	
+	.smooth_zoom_icons {
+		background-image: url(assets/icons.png);
+	}
+	#zoom_container_directory .landmarks{
+		position:absolute;
+		z-index:10;	
+		top:0px;
+		left:0px;
+		font-family: Helvetica, Arial, Verdana;
+		font-size:12px;
+		color: #ffffff;
+	}	
+	#zoom_container_directory .landmarks .item {
+		position:absolute;		
+		text-align:center;		
+		display: none;	
+	}	
+	#zoom_container_directory .landmarks .lable div {
+		width: 100px;
+		padding: 4px;		
+	}	
+	#zoom_container_directory .landmarks .mark .text{
+		background-color:#000000;
+		padding:2px 6px;
+	}
+	#map_image{
+		width:800px;
+		height: 852px;
+		min-width:800px;
+		min-height: 852px;
+	}
+	#parent_div{
+		height: 500px;
+		margin-bottom: 20px;
+	}
+	@media(max-width: 500px){
+		#parent_div{
+			
+		}
+		.trim_screen{
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+</style>
 <div>
 	<h1 class="page_title">Centre Map</h1>
 	<select class="mapper" id="store_select_container">
@@ -6,8 +57,8 @@
         </script>
 	</select>
 	<div id="parent_div">
-		<div id="zoom_container"  >
-			<img alt="Store Directory Map" id="map_image" src=""/>
+		<div id="zoom_container_directory">
+			<img alt="Store Directory Map" id="map_image" src="https://www.mallmaverick.com/system/properties/maps/000/000/040/original/WBM-Site-Plan_2016.jpg?1454088377"/>
 			<div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>
 		</div>
 	</div>
@@ -22,23 +73,19 @@
             $(".mapper").prepend("<option selected>Select a Store</option>");
 
             
-            $("#map_image").attr("src", getPNGMapURL())
-        		$('#map_image').smoothZoom({
-        		    width: 870,
-                    height: 540,
-        		    initial_ZOOM: 0,
-        			zoom_MIN: 0,
-        			zoom_MAX: 250,
-        			responsive: true,
-        		    responsive_maintain_ratio: true,
-        			zoom_BUTTONS_SHOW : 'YES',
-        			pan_BUTTONS_SHOW : 'NO',
-        			pan_LIMIT_BOUNDARY : 'NO',
-        			button_SIZE: 34,
-        			button_ALIGN: "top right",
-        			zoom_OUT_TO_FIT: "NO",
-        			container: 'zoom_container'
-        		});
+            $('#map_image').smoothZoom({
+    			initial_POSITION: "0 0",
+    	    	pan_BUTTONS_SHOW: "NO",
+    	    	zoom_OUT_TO_FIT: "NO",
+    	     	button_SIZE: 34,
+    	        button_ALIGN: "top right",    
+    	     	container: 'zoom_container_directory',
+    	     	responsive: true,
+    	     	responsive_maintain_ratio: false,
+    	     	zoom_MAX: 300,
+    	     	zoom_MIN: 0
+    
+    		});
         	show_png_pin(".mapper", "#map_image");
         }
         loadMallDataCached(renderAll);
