@@ -238,7 +238,7 @@
                                 <div id="property_phone_container">
                                     <script id="property_phone_template">
                                         {%raw%}
-                                        <span class="hour_info hidden-xs">{{{ contact_phone }}}</span>
+                                        <span class="hour_info hidden-xs"></span>
                                         {%endraw%}
                                         
                                         
