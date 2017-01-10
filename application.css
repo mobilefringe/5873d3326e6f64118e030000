@@ -1446,6 +1446,10 @@ hr{
     background-color: #ffffff;
     border: 1px solid #cccccc;
 }
+#parent_div {
+    height: 500px;
+    margin-bottom: 20px;
+}
 #zoom_container .landmarks {
     position: absolute;
     z-index: 10;
