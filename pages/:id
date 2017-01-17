@@ -2,10 +2,13 @@
     <h1 class="page_title" id="page_title"></h1>
     <hr>
     <div id="contact_us" class="hidden_now">
-        <iframe class="hidden-xs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.6113053338036!2d-114.14118088433742!3d51.04179935245954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716e309b084c4f%3A0x4bf73618e4160580!2sWestbrook+Mall!5e0!3m2!1sen!2sca!4v1483996195167" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe>
-        
-        <iframe class="visible-xs-inline-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.6113053338036!2d-114.14118088433742!3d51.04179935245954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716e309b084c4f%3A0x4bf73618e4160580!2sWestbrook+Mall!5e0!3m2!1sen!2sca!4v1483996195167" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="line_break"></div>    
+        <div id="map_container">
+            <script id="map_template" type="x-tmpl-mustache/text">
+                <iframe class="hidden-xs" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                <iframe class="visible-xs-inline-block" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="line_break"></div>
+            </script>
+        </div>  
     </div>
     <div id="page_body"></div>
     <div id="contact_form" class="hidden_now">
@@ -61,6 +64,9 @@
     $(document).ready(function(){
         function renderAll(){
             init();
+            var prop_details = getPropertyDetails();
+            renderPropertyDetails('#map_container', '#map_template', prop_details);
+            
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var pages_json = "//www.westbrookmall.com//pages/" + slug + ".json"
