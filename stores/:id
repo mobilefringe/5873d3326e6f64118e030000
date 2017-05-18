@@ -149,7 +149,7 @@
                 renderJobs('#jobs_container', '#jobs_template', published_jobs);
                 $('#employment').show();
             }
-            $("#map_image").attr("src", getPNGMapURL())        
+            $("#map_image").attr("src", getPNGMapURL());        
             var dimension = (store_details.x_coordinate - 460)  + " " + (store_details.y_coordinate - 230);
     		$('.demo1').craftmap({
                 image: {
