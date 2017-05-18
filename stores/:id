@@ -156,8 +156,8 @@
                 image: {
         			width: 800,
     				height: 852,
-    				name: 'imgMap'
-    				src
+    				name: 'imgMap',
+    				src: map_url
     			},
     			map: {
     				position: dimension
