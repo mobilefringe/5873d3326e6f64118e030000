@@ -25,7 +25,7 @@
 <scipt src="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/javascript/1478472594000/lightbox.min.js"></scipt>
 <script>
     $(document).ready(function(e){
-        init(e)
+        init(e);
         function renderAll(){
             var events = getEventsList().sortBy(function(o){ return o.start_date });
             var prop = getPropertyDetails();
