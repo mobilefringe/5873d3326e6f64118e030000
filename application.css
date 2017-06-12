@@ -245,7 +245,7 @@ a:hover {
 
 
 .content_area{
-    background-image:url(BACKGROUND_IMAGE);
+    // background-image:url(BACKGROUND_IMAGE);
     background-color: #D6D6D6;
 }
 
@@ -786,9 +786,6 @@ ul.store_tabs li.active a:hover {
 a.btn-nav {
     color:white;    
 }
-.btn-nav:hover,.btn-nav:focus,.btn-nav:active  {
-    background-image:url(PRIMARY_NAV_SELECTED_IMAGE);
-}
 
 .btn-nav a span {
     
@@ -811,9 +808,7 @@ a.btn-nav {
     height: 30px;
 }
 
-/*
-  Button Prime
-*/
+/* Button Prime */
 a.btn-prime {
   background-color: #b4b4b4;
   color:#FFFFFF;
@@ -822,9 +817,9 @@ a.btn-prime {
   padding-left:25px;
   margin-bottom: 10px;
 }
-.nav-bar{
-   background-image:url(PRIMARY_NAV_IMAGE);
-}
+// .nav-bar{
+//   background-image:url(PRIMARY_NAV_IMAGE);
+// }
 .alphabet_bg{
     background-color:white;
     border-bottom: 2px solid #000000;
