@@ -61,87 +61,91 @@
 <div class="mobile_line_break"></div>
 
 <script>
-    $(document).ready(function(){
-        function renderAll(){
-            init();
-            var prop_details = getPropertyDetails();
-            renderPropertyDetails('#map_container', '#map_template', prop_details);
-            
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            var pages_json = "//www.westbrookmall.com//pages/" + slug + ".json"
-            $.getJSON(pages_json).done(function(data) {
-                $('#page_title').html(data.title);
-                $('#page_body').html(data.body);
-                if(slug === "westbrook-contact-us") {
-                    $("#contact_us").show();
-                    $("#contact_form").show();
-                }
-                if(slug === "westbrook-accessability") {
-                    $("#page_title").html("Accessibility");
-                }
-            }).fail(function(jqXHR) {
-                if (jqXHR.status == 404) {
-                    $("#error_msg").fadeIn("fast");
-                }
-            }); 
-        }
+$(document).ready(function(){
+    init(e);
+    function renderAll(){
+        var prop_details = getPropertyDetails();
+        renderPropertyDetails('#map_container', '#map_template', prop_details);
         
-        function submitMSG(){
-            if ($("#cm-firstname").val() == ""){
-                alert("Please Enter First Name");
-                $("#cm-firstname").focus();
-                return false;
-            } else if ($("#cm-lastname").val() == ""){
-                alert("Please Enter Last Name");
-                $("#cm-lastname").focus();
-                return false;
-            } else if ($("#email-newsletter").val() == ""){
-                alert("Please Enter Email");
-                $("#email-newsletter").focus();
-                return false;
-            } else if(!isValidEmailAddress($("#email-newsletter").val())){
-                alert("Please Enter a valid email address");
-                $("#email-newsletter").focus();
-                return false;
-            } else if ($("#phoneNumber").val() == ""){
-                alert("Please Enter Phone Number");
-                $("#phoneNumber").focus();
-                return false;
-            } else if ($("#message").val() == ""){
-                alert("Please Enter message");
-                $("#message").focus();
-                return false;
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var pages_json = "//www.westbrookmall.com//pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            $('#page_title').html(data.title);
+            $('#page_body').html(data.body);
+            if(slug === "westbrook-contact-us") {
+                $("#contact_us").show();
+                $("#contact_form").show();
             }
-
-            $('#cm-name').val($('#cm-firstname').val()+ ' ' +$('#cm-lastname').val());
-            var values = {};
-             $.each($('#msg-contact').serializeArray(), function(i, field) {
-                 values[field.name] = field.value;
-             });
-            
-            $.ajax({
-                url : "/verify_captcha",
-                type: "POST",
-                data : {
-                    "g-recaptcha-response": values['g-recaptcha-response'],
-                    "secret_key": "6LduhgITAAAAANNWQjvEjqsi_cC0CrfNaqsg7e3u"
-                },
-                success: function(data, textStatus, jqXHR)
-                {
-                    if(data == "true"){
-                        $.post( "/send_contact_email", { 'send_to': "westbrookmallinfo@20vic.com", 'subject': "Customer Feedback - Westbrook Mall", 'body': {"Name": $('#cm-name').val(), "Email" : $('#email-newsletter').val(), "Phone Number":$('#phoneNumber').val(),"Message":$('#message').val()} } );
-                        $("#msg-contact").submit();
-                    } else{
-                        $('#captcha_validation').show();
-                    }
-                  
-                },
-                error: function (jqXHR, textStatus, errorThrown)
-                {
-                }
-            });
+            if(slug === "westbrook-accessability") {
+                $("#page_title").html("Accessibility");
+            }
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#error_msg").fadeIn("fast");
+            }
+        }); 
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    
+    function submitMSG(){
+        if ($("#cm-firstname").val() == ""){
+            alert("Please Enter First Name");
+            $("#cm-firstname").focus();
+            return false;
+        } else if ($("#cm-lastname").val() == ""){
+            alert("Please Enter Last Name");
+            $("#cm-lastname").focus();
+            return false;
+        } else if ($("#email-newsletter").val() == ""){
+            alert("Please Enter Email");
+            $("#email-newsletter").focus();
+            return false;
+        } else if(!isValidEmailAddress($("#email-newsletter").val())){
+            alert("Please Enter a valid email address");
+            $("#email-newsletter").focus();
+            return false;
+        } else if ($("#phoneNumber").val() == ""){
+            alert("Please Enter Phone Number");
+            $("#phoneNumber").focus();
+            return false;
+        } else if ($("#message").val() == ""){
+            alert("Please Enter message");
+            $("#message").focus();
+            return false;
         }
-        loadMallDataCached(renderAll); 
-    })
+
+        $('#cm-name').val($('#cm-firstname').val()+ ' ' +$('#cm-lastname').val());
+        var values = {};
+         $.each($('#msg-contact').serializeArray(), function(i, field) {
+             values[field.name] = field.value;
+         });
+        
+        $.ajax({
+            url : "/verify_captcha",
+            type: "POST",
+            data : {
+                "g-recaptcha-response": values['g-recaptcha-response'],
+                "secret_key": "6LduhgITAAAAANNWQjvEjqsi_cC0CrfNaqsg7e3u"
+            },
+            success: function(data, textStatus, jqXHR)
+            {
+                if(data == "true"){
+                    $.post( "/send_contact_email", { 'send_to': "westbrookmallinfo@20vic.com", 'subject': "Customer Feedback - Westbrook Mall", 'body': {"Name": $('#cm-name').val(), "Email" : $('#email-newsletter').val(), "Phone Number":$('#phoneNumber').val(),"Message":$('#message').val()} } );
+                    $("#msg-contact").submit();
+                } else{
+                    $('#captcha_validation').show();
+                }
+              
+            },
+            error: function (jqXHR, textStatus, errorThrown)
+            {
+            }
+        });
+    }
+    loadMallDataCached(renderAll); 
+})
 </script>
