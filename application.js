@@ -555,7 +555,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png";
         } else {
             val.image_url = val.image_url;
         }
@@ -575,7 +575,7 @@ function renderPostDetails(container, template, collection){
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png";
         } else {
             val.image_url = val.image_url;
         }
@@ -616,7 +616,7 @@ function show_png_pin(trigger, map){
 					<div class="text">\
 					<strong>'+ selectedOptionName + '</strong>\
 				</div>\
-				<img src="//www.westbrookmall.com/assets/map_pin_default.png" width="40px" height="59px" alt="marker" />\
+				<img src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497039299000/map_marker.png" width="40px" height="59px" alt="marker" />\
 				</div>\
 			</div>'
 			]
