@@ -1317,8 +1317,7 @@ hr{
     text-decoration: none;
 }
 .promo_info{
-    // float:left;
-    // width:72%;
+    word-wrap: break-word;
 }
 
 .promo_info a {
