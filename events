@@ -11,6 +11,11 @@ dsdsJamie test
                         <img src="{{event_image_url_abs}}">
                     </a>
                 </div>
+                
+                <img src="//codecloud.cdn.speedyrails.netsites_test/5873d3326e6f64118e030000/image/jpeg/1499879997000/agileteam.jpg" class="" alt="">
+                
+                
+                http://assets.codecloudapp.com/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png
                 <div class="col-sm-9">
                     <div class="promo_info">
                         <a href="/events/{{slug}}"><h2>{{name}}</h2></a>
