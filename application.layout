@@ -373,7 +373,8 @@
                 &copy; 2017 Westbrook Mall | <a href="/pages/westbrook-privacy-policy" target="_blank">Privacy Policy</a> | Powered By <a href="//www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
             </span>
             <a href="//www.20vic.com/" target="_blank">
-                <img ALT="20vic_logo" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1495132160000/20vic_logo.png" />
+                <!--<img ALT="20vic_logo" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1495132160000/20vic_logo.png" />-->
+                <img src="//codecloud.cdn.speedyrails.net/sites/59b81d926e6f640e150e0000/image/png/1509381758000/CW Logos-_CW_Blackredlogo.png" class="" alt="" style="width:140px;”>
             </a>
         </div>
     </footer>
