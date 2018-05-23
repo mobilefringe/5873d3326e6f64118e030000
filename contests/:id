@@ -56,8 +56,8 @@
                             I agree to receive communications from {{property_name}}. You can unsubscribe at anytime. For more details about personal data privacy, please read our <a href="/pages/marlborough-privacy-policy" target="_blank">Privacy Policy</a>.
                         </label>
                         <br/><br/>
-                        <label for="agree_terms" class="agree_msg agree contest_rules">
-                            <input id="agree_terms" type="checkbox" name="contest[rules]" required data-validation="required" /> 
+                        <label for="agree_contest_terms" class="agree_msg agree contest_rules">
+                            <input id="agree_contest_terms" type="checkbox" name="contest[rules]" required data-validation="required" /> 
                             I have read and am in full compliance with the official contest <a href="/pages/marlborough-rules-and-regulations" target="_blank">rules and regulations</a>.
                         </label>
                     </div>
