@@ -284,11 +284,11 @@
                     </div>
                     <div class="newsletter_box">
                         <form action=http://mobilefringe.createsend.com/t/d/s/ykbz/ method="post" id="subForm">
-                            <span for="newsletter_box_id">
+                            <span>
                                 <i class="fa fa-envelope social_icon" aria-hidden="true"></i>
                                 SUBSCRIBE AND GET UPDATES
                             </span>                
-                            <span>Subscribe to our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!</span>
+                            <p>Subscribe to our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!</p>
                             <label for="fieldEmail" style="display:none">Enter Your Email</label>
                             <input id="fieldEmail" name=cm-ykbz-ykbz type="email" required placeholder="Your Email" />   
                             <label style="display:none" for="agree_terms">Subscribe</label>
