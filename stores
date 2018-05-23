@@ -58,9 +58,11 @@
                                 <span style="{{promotion_exist}}">
                                     <img alt="" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497038419000/btn_promo.png"/>
                                 </span>
+                                {{#phone}}
                                 <span class="store_phone hidden-xs">
                                     {{phone}}
                                 </span>
+                                {{/phone}}
                                 <span>
                                     {{#phone}}
                                     <a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
@@ -95,9 +97,11 @@
                                 <span style="{{promotion_exist}}">
                                     <img alt="" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497038419000/btn_promo.png"/>
                                 </span>
+                                {{#phone}}
                                 <span class="store_phone hidden-xs">
                                     {{phone}}
                                 </span>
+                                {{/phone}}
                                 <span>
                                     {{#phone}}
                                     <a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
