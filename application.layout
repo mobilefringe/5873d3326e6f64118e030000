@@ -284,20 +284,15 @@
                     </div>
                     <div class="newsletter_box">
                         <form action=http://mobilefringe.createsend.com/t/d/s/ykbz/ method="post" id="subForm">
-                            <label for="newsletter_box_id">
+                            <span for="newsletter_box_id">
                                 <i class="fa fa-envelope social_icon" aria-hidden="true"></i>
                                 SUBSCRIBE AND GET UPDATES
-                            </label>                
-                            <span>
-                                Subscribe to our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!
-                            </span>
-                            <label for="fieldEmail" style="display:none"> subscribe email </label>
+                            </span>                
+                            <span>Subscribe to our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!</span>
+                            <label for="fieldEmail" style="display:none">Enter Your Email</label>
                             <input id="fieldEmail" name=cm-ykbz-ykbz type="email" required placeholder="Your Email" />   
-                            <span>
-                                <label style="display:none" for="agree_terms">Subscribe</label>
-                                    <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Westbrook Mall
-                                
-                            </span>
+                            <label style="display:none" for="agree_terms">Subscribe</label>
+                            <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Westbrook Mall
             				<br />						
                             <button class="btn">Subscribe</button>                      
                             <br />
