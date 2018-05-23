@@ -297,7 +297,7 @@
                             </p>
                             <button class="btn">Subscribe</button>                      
                             <br />
-            				<span id="success_subscribe">Thank you for subscribing to our newsletter.</span>
+            				<p id="success_subscribe">Thank you for subscribing to our newsletter.</p>
                         </form>
                     </div>
                     <div class="social_links_mobile visible-xs-block">
