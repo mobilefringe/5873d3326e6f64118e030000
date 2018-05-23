@@ -1252,7 +1252,7 @@ hr{
     hr { height:3px; }
 }
 
-.store_btn{
+.store_btn {
     border-radius: 3px;
     font-family:futura_medium_light,futura_medium_light_ie;
     text-transform:uppercase;
@@ -1260,7 +1260,7 @@ hr{
     width: 49.5%;
     height: 55px;
     float: left;
-    background-color:#f57b2b;
+    background-color: #de761c;
     color: white !important;
     display:inline-block; 
     font-size:1.5em;
