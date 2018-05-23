@@ -1307,10 +1307,10 @@ hr{
     display: inline-block;
 }
 
-.promo_date{
-    color: #ff0000;
-    font-family:futura_condensed;
-    font-size:18pt;
+.promo_date {
+    color: #d20000;
+    font-family: futura_condensed;
+    font-size: 18pt;
 }
 
 .promo_back {
