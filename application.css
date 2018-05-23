@@ -1044,6 +1044,8 @@ a.btn-prime {
     text-transform: uppercase;
     z-index: 900;
     width: 100%;
+    display: inline-block;
+    max-width: 100%;
 }
 .right_feature_box .feature_label {
     position: absolute;
@@ -1108,8 +1110,8 @@ a.btn-prime {
     margin: 22px 0\9;
     font-family: inherit;
 }
-.hour_title{
-    color: black;
+.hour_title {
+    color: #FFF;
     display:block;
     font-family: inherit;
     line-height:.5em;
