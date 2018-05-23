@@ -2224,13 +2224,11 @@ td.stores_pin{
 .controls{
     background-color: #4d413e;
 }
-
 .hour_title, .check_hours{
     color:#4d413e;
 }
-
-.hour_info{
-    color:#f57b2b;    
+.hour_info {
+    color: #FFF;    
 }
 
 #site_nav li button:focus{
