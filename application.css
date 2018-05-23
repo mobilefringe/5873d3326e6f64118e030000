@@ -466,7 +466,7 @@ legend{
     color: black;
 }
 
-.newsletter_box span {
+.newsletter_box p {
     font-weight: lighter;
     padding: 5px 0px 10px;
     display: block;
