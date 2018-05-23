@@ -57,86 +57,85 @@
         <!--Header -->
         <div class="header">
             <!-- iphone header -->
-            <div class="visible-xs-block mobile_header top_nav row-fluid" >                
+            <nav class="visible-xs-block mobile_header top_nav row-fluid" >                
                 <div class="background_bar"></div>
-                    <button type="button" data-toggle="dropdown" class="pull-right">
-                        <i class="fa fa-align-justify fa-lg"></i>
-                    </button>
-                    <ul class="dropdown-menu bottom">                                
-                        <li class="mobile_menu_header" >
-                            <a>STORES</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                            <a href='/stores'>Store Directory</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                            <a href='/map'>Shopping Map</a>
-                        </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/promotions'>PROMOTIONS</a>
-                        </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/events'>EVENTS</a>
-                        </li>
-                        <li class="mobile_menu_header" >
-                            <a>GUEST SERVICES</a>
-                        </li>
-                        <li class="mobile_menu_item" >
-                            <a href='/pages/westbrook-guest-services' >Guest Services</a>
-                        </li>
-                        <li class="mobile_menu_item" >
-                            <a href='/pages/westbrook-security'>Security</a>
-                        </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/jobs' >CAREERS</a>
-                        </li>         
-                        <li class="mobile_menu_header" >
-                            <a href='' >ABOUT US</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                            <a href='/hours'>Shopping Hours</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                            <a href='/pages/westbrook-leasing'>Leasing</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                            <a href='/pages/westbrook-mall-info'>Mall Info</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                            <a href='/pages/westbrook-accessability'>Accessibility</a>
-                        </li>        
-                        <li class="mobile_menu_item">
-                          <a href='/pages/westbrook-contact-us'>Contact Us</a>
-                        </li>
-                    </ul>
-                    <a id="mobile_logo" href="/">
-                        <img class="mobile_logo" alt="Westbrook Mall Mobile Logo" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png"/>
-                    </a>
-                </div>
-                <!-- iphone header END --> 
-                <!--Top Nav Dynamic-->
-                <div class="hidden-xs top_nav custom_dropdown full_header">
-                    <div class="brand_nav">
-                        <div class ="row-fluid">
-                            <div class="trim_screen">
-                                <div class="select_parent pull-right">
-                                    <label for="brand_select" style="display:none">select brand</label>
-                                    <select id="brand_select">
-                                        <script id="brand_select_template" type="x-tmpl-mustache/text">
-                                            {%raw%}
-                                            <option value="{{slug}}">{{name}}</option>
-                                            {%endraw%}
-                                        </script>
-                                    </select>
-                                </div>  
-                            </div>
+                <button type="button" data-toggle="dropdown" class="pull-right">
+                    <i class="fa fa-align-justify fa-lg"></i>
+                </button>
+                <ul class="dropdown-menu bottom">                                
+                    <li class="mobile_menu_header" >
+                        <a>STORES</a>
+                    </li>
+                    <li class="mobile_menu_item">
+                        <a href='/stores'>Store Directory</a>
+                    </li>
+                    <li class="mobile_menu_item">
+                        <a href='/map'>Shopping Map</a>
+                    </li>
+                    <li class="mobile_menu_header" >
+                        <a href='/promotions'>PROMOTIONS</a>
+                    </li>
+                    <li class="mobile_menu_header" >
+                        <a href='/events'>EVENTS</a>
+                    </li>
+                    <li class="mobile_menu_header" >
+                        <a>GUEST SERVICES</a>
+                    </li>
+                    <li class="mobile_menu_item" >
+                        <a href='/pages/westbrook-guest-services' >Guest Services</a>
+                    </li>
+                    <li class="mobile_menu_item" >
+                        <a href='/pages/westbrook-security'>Security</a>
+                    </li>
+                    <li class="mobile_menu_header" >
+                        <a href='/jobs' >CAREERS</a>
+                    </li>         
+                    <li class="mobile_menu_header" >
+                        <a href='' >ABOUT US</a>
+                    </li>
+                    <li class="mobile_menu_item">
+                        <a href='/hours'>Shopping Hours</a>
+                    </li>
+                    <li class="mobile_menu_item">
+                        <a href='/pages/westbrook-leasing'>Leasing</a>
+                    </li>
+                    <li class="mobile_menu_item">
+                        <a href='/pages/westbrook-mall-info'>Mall Info</a>
+                    </li>
+                    <li class="mobile_menu_item">
+                        <a href='/pages/westbrook-accessability'>Accessibility</a>
+                    </li>        
+                    <li class="mobile_menu_item">
+                      <a href='/pages/westbrook-contact-us'>Contact Us</a>
+                    </li>
+                </ul>
+                <a id="mobile_logo" href="/">
+                    <img class="mobile_logo" alt="Westbrook Mall Mobile Logo" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png"/>
+                </a>
+            </nav>
+            <!-- iphone header END --> 
+            <!--Top Nav Dynamic-->
+            <div class="hidden-xs top_nav custom_dropdown full_header">
+                <div class="brand_nav">
+                    <div class ="row-fluid">
+                        <div class="trim_screen">
+                            <div class="select_parent pull-right">
+                                <label for="brand_select" style="display:none">select brand</label>
+                                <select id="brand_select">
+                                    <script id="brand_select_template" type="x-tmpl-mustache/text">
+                                        {%raw%}
+                                        <option value="{{slug}}">{{name}}</option>
+                                        {%endraw%}
+                                    </script>
+                                </select>
+                            </div>  
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="hidden-xs row-fluid">
-	  	    <div class="trim_screen nav_container" id="site_nav">              
+	  	    <nav class="trim_screen nav_container" id="site_nav">              
                 <a id="centre_logo" href="/">
                     <img alt="Westbrook Mall Logo" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png"/>
                 </a>
@@ -194,7 +193,7 @@
                     </li>
                 </ul>
                 <hr>
-		   	</div>                 
+		   	</nav>                 
 		</div>          
     </header>
     
@@ -328,7 +327,7 @@
                 </div>
         		<div class="col-sm-12 col-md-4">   
         		    <div class="mobile_line_break"></div>
-                    <div class="nav_site_map hidden-xs">
+                    <nav class="nav_site_map hidden-xs">
                         <label for="nav_site_map_link_id" >NAVIGATION</label>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
@@ -374,7 +373,7 @@
                                 <a class="site_map_submenu" href='/pages/westbrook-contact-us' target='_self'>Contact Us</a>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                     <div class="line_break hidden-xs"></div>
                 </div>
                 <div class="line_break hidden-xs"></div>
