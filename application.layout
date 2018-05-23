@@ -290,9 +290,11 @@
                             </span>                
                             <p>Subscribe to our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!</p>
                             <label for="fieldEmail" style="display:none">Enter Your Email</label>
-                            <input id="fieldEmail" name=cm-ykbz-ykbz type="email" required placeholder="Your Email" />   
-                            <label style="display:none" for="agree_terms">Subscribe</label>
-                            <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Westbrook Mall
+                            <input id="fieldEmail" name=cm-ykbz-ykbz type="email" required placeholder="Your Email" />  
+                            <p>
+                                <label style="display:none" for="agree_terms">Subscribe</label>
+                                <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Westbrook Mall
+                            </p>
             				<br />						
                             <button class="btn">Subscribe</button>                      
                             <br />
