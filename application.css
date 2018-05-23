@@ -514,7 +514,7 @@ legend{
     display: none;
 }
 .bottom_nav .nav_site_map{
-    color: #64676c;
+    color: #000;
     float:left;
     width: 20%\9;    
     font-size:.9em;    
@@ -528,15 +528,13 @@ legend{
 .nav_site_map_link{
     height: 210px;
 }
-
 .bottom_nav .nav_site_map .nav_sitemap_item {
     width: auto;
     margin-right: 0;
     float: none;
-    
 }
 .bottom_nav .nav_site_map .nav_sitemap_item a {
-    color: #64676c;   
+    color: #000;   
 }
 .bottom_nav .nav_site_map span{
     padding:5px 0px;
