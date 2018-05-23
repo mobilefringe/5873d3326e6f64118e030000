@@ -1089,10 +1089,8 @@ a.btn-prime {
 }
 .hour_box{
     width: 100%;    
-    // background-color:#d2d2d2;
     background: #929292;
-    background: #a2a2a2;
-    position:relative;
+    position: relative;
     z-index: 999;
     font-family: futura_condensed;
 }
