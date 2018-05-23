@@ -141,7 +141,7 @@
                 </a>
                 <ul>                  
                     <li class="dropdown ">
-                        <button class="btn-nav" data-toggle="dropdown">STORES</button>                                                     
+                        <button class="btn-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">STORES</button>
                         <ul class="dropdown-menu">                            
                             <li>
                                 <a class="nav_a" href='/stores' target='_self'><span>Store Directory</span></a>                                
@@ -158,7 +158,7 @@
                         <button class="btn-nav" onclick="window.location.href='/events'">EVENTS</button>
                     </li>
                     <li>                        
-                        <button class="btn-nav" data-toggle="dropdown">GUEST SERVICES</button>
+                        <button class="btn-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GUEST SERVICES</button>
                         <ul class="dropdown-menu" style="left: auto; right: auto;">                            
                             <li>
                                 <a class="nav_a" href='/pages/westbrook-guest-services' target='_self'><span>Guest Services</span></a> 
@@ -172,7 +172,7 @@
                         <button class="btn-nav" onclick="window.location.href='/jobs'">CAREERS</button>
                     </li>             
                     <li class="dropdown ">
-                        <button class="btn-nav" data-toggle="dropdown">ABOUT US</button>                                                     
+                        <button class="btn-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT US</button>
                         <ul class="dropdown-menu" style="right:0px; left:auto;">                            
                             <li>
                                 <a class="nav_a" href='/hours' target='_self'><span>Shopping Hours</span></a>                                
@@ -207,8 +207,7 @@
                 <div class="col-md-3">
                     <div class="hour_box">  
                         <div class="hour_info">
-                            <label for="hours_today" class="feature_label">HOURS TODAY</label>
-                            <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
+                            <span for="hours_today" class="feature_label">HOURS TODAY</span>
                             <div id="home_hours_container" class="home_hours_info">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
                                     {%raw%}
@@ -277,10 +276,10 @@
         	<div class="row-fluid">
                 <div class="col-sm-6 col-md-4">
                     <div class="hidden-xs special_box">
-                        <label for="facebook_image_id">                     
+                        <span for="facebook_image_id">                     
                             <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
                             FACEBOOK
-                        </label>
+                        </span>
                         <div class="fb-page" data-href="https://www.facebook.com/WestbrookMall/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/WestbrookMall/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WestbrookMall/">Westbrook Mall</a></blockquote></div>
                     </div>
                     <div class="newsletter_box">
@@ -300,16 +299,18 @@
                                 
                             </span>
             				<br />						
-                            <button class="btn"/>Subscribe</button>                      
+                            <button class="btn">Subscribe</button>                      
                             <br />
             				<span id="success_subscribe">Thank you for subscribing to our newsletter.</span>
                         </form>
                     </div>
                     <div class="social_links_mobile visible-xs-block">
                         <a href="//www.facebook.com/WestbrookMall" target="_blank">
+                            <p style="display:none">Facebook</p>
                             <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
                         </a>
                         <a href="//twitter.com/WestbrookMall" target="_blank">
+                            <p style="display:none">Twitter</p>
                             <i class="fa fa-twitter social_icon" aria-hidden="true"></i>    
                         </a>
                     </div>
@@ -317,10 +318,10 @@
                 
                 <div class="col-sm-6 col-md-4">
                     <div class="hidden-xs special_box">
-                        <label for="twitter_id">               
+                        <span for="twitter_id">               
                             <i class="fa fa-twitter social_icon" aria-hidden="true"></i>
                             TWITTER                
-                        </label>
+                        </span>
                         <a class="twitter-timeline" data-height="372" href="//twitter.com/WestbrookMall">Tweets by WestbrookMall</a> 
                         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
@@ -328,13 +329,11 @@
         		<div class="col-sm-12 col-md-4">   
         		    <div class="mobile_line_break"></div>
                     <nav class="nav_site_map hidden-xs">
-                        <label for="nav_site_map_link_id" >NAVIGATION</label>
+                        <span for="nav_site_map_link_id" >NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">STORES</span>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/stores' target='_self'>Store Directory</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/map' target='_self'>Shopping Map</a>
                             </div>
                             <div class="nav_sitemap_item">
@@ -349,9 +348,7 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">GUEST SERVICES</span>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-guest-services' target='_self'>Guest Services</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-security' target='_self'>Security</a>
                             </div>
                             <div class="nav_sitemap_item">
@@ -361,15 +358,10 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">ABOUT US</span>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/hours' target='_self'>Shopping Hours</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-leasing' target='_self'>Leasing</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-mall-info' target='_self'>Mall Info</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-accessability' target='_self'>Accessibility</a>
-                                <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-contact-us' target='_self'>Contact Us</a>
                             </div>
                         </div>
@@ -384,7 +376,7 @@
                 &copy;<span id="current_year"></span> Westbrook Mall | <a href="/pages/westbrook-privacy-policy" target="_blank">Privacy Policy</a> | Powered By <a href="//www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
             </span>
             <a href="http://www.cushmanwakefield.ca/en/" target="_blank">
-                <img src="//codecloud.cdn.speedyrails.net/sites/59b81d926e6f640e150e0000/image/png/1509381758000/CW Logos-_CW_Blackredlogo.png" class="" alt="Cushman & Wakefield" style="width:140px" />
+                <img src="//codecloud.cdn.speedyrails.net/sites/59b81d926e6f640e150e0000/image/png/1509381758000/CW Logos-_CW_Blackredlogo.png" alt="Cushman & Wakefield" style="width: 140px;" />
             </a>
         </div>
     </footer>
@@ -411,18 +403,15 @@
     </script>
  
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <!--<script>-->
-    <!--    $("#track_link").click( function() {-->
-    <!--        trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/');-->
-    <!--    });-->
-    <!--</script>-->
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 
 </html>
