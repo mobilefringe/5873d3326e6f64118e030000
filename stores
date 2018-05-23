@@ -94,9 +94,13 @@
                                     <img alt="" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497038419000/btn_promo.png"/>
                                 </span>
                                 <span class="store_phone hidden-xs"><a href="tel:{{phone}}">{{phone}}</a></span>
-                                <span><a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
-                                    <img ALT="store.phone" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497038601000/icon_call_stores.png" />
-                                </a></span>
+                                <span>
+                                    {{#phone}}
+                                    <a class="visible-xs-inline-block"style="{{phone_exist}}" href="tel:{{phone}}">
+                                        <img ALT="store.phone" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497038601000/icon_call_stores.png" />
+                                    </a>
+                                    {{/phone}}    
+                                </span>
                             </div>
                         </div>
                     </script>
