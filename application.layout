@@ -204,7 +204,6 @@
                 <h1 style="display: none;">Westbrook Mall</h1>
                 {{yield}}
             </div>
-    
             <div class="mobile_container">
                 <div class="col-md-3">
                     <div class="hour_box">  
