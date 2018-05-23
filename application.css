@@ -448,30 +448,27 @@ legend{
     float:left;
     margin-right:10px;
 }
-
 .bottom_nav .social_box{
     float:left;
     margin-right:2%;
     max-width: 300px;
 }
-
 .social_icon {
     margin-right: 5px;
     color: #de761c;
     font-size: 32px;
     text-shadow: 1px 1px 1px rgba(56,56,56, 0.25);
 }
-.newsletter_box{
+.newsletter_box {
     margin-top: 20px;
     color: black;
 }
-
 .newsletter_box p {
-    font-weight: lighter;
     padding: 5px 0px 10px;
     display: block;
-    color: gray;
     font-size: 0.8em;
+    font-weight: lighter;
+    color: #545454;
 }
 .newsletter_box #fieldEmail {
     margin: 0;
