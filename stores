@@ -55,9 +55,11 @@
                                 <a href="/stores/{{slug}}">{{name}}</a>
                             </div>
                             <div class="pull-right stores_row stores_row_phone">
+                                {{#promotion_exist}}
                                 <span style="{{promotion_exist}}">
                                     <img alt="Promotion Available at {{name}}" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497038419000/btn_promo.png"/>
                                 </span>
+                                {{/promotion_exist}}
                                 {{#phone}}
                                 <span class="store_phone hidden-xs">
                                     {{phone}}
