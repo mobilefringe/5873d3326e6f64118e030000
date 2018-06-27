@@ -303,11 +303,11 @@
                             <input id="fieldEmail" name=cm-ykbz-ykbz type="email" required placeholder="Your Email" />   
                             <span>
                                 <label style="display:none" for="agree_terms">Subscribe</label>
-                                    <input type="checkbox" class="info_check" id="agree_terms" /> I agree to receive newsletters from Westbrook Mall
+                                <input type="checkbox" class="info_check" id="agree_terms" required /> I agree to receive newsletters from Westbrook Mall
                                 
                             </span>
             				<br />						
-                            <button class="btn"/>Subscribe</button>                      
+                            <button class="btn">Subscribe</button>                      
                             <br />
             				<span id="success_subscribe">Thank you for subscribing to our newsletter.</span>
                         </form>
