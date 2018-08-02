@@ -394,7 +394,7 @@ legend{
     padding-right: 0px;
 }
 #site_nav ul.dropdown-menu {
-    width: 200px;
+    width: 200px !important;
     background-color: white;
     top: 25px;
     left: 0px;
