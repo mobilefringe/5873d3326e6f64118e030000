@@ -39,16 +39,7 @@
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: //bootswatch.com/flatly/ -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            #site_nav ul.dropdown-menu {
-    width: 200px;
-    background-color: white;
-    top: 25px;
-    left: 0px;
-    border: solid 1px gray;
-    border-radius: 5px;
-}
-        </style>
+        
     <!--CSS-->
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
