@@ -108,6 +108,9 @@
                         <li class="mobile_menu_item">
                           <a href='/pages/westbrook-contact-us'>Contact Us</a>
                         </li>
+                        <li class="mobile_menu_item">
+                          <a href='/pages/westbrook-act-green-initiatives'>ACT Green Initiatives</a>
+                        </li>
                     </ul>
                     <a id="mobile_logo" href="/">
                         <img class="mobile_logo" ALT="mobile_logo" src="//codecloud.cdn.speedyrails.net/sites/5873d3326e6f64118e030000/image/png/1497447209000/westbrook_logo.png"/>
@@ -189,6 +192,9 @@
                             </li>
                             <li>
                                 <a class="nav_a" href='/pages/westbrook-contact-us' target='_self'><span>Contact Us</span></a>  
+                            </li>
+                             <li>
+                                <a class="nav_a" href='/pages/westbrook-act-green-initiatives' target='_self'><span>ACT Green Initiatives</span></a>  
                             </li>
                         </ul>
                     </li>
@@ -378,6 +384,7 @@
                                 <a class="site_map_submenu" href='/pages/westbrook-accessability' target='_self'>Accessibility</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/westbrook-contact-us' target='_self'>Contact Us</a>
+                                <a class="site_map_submenu" href='/pages/westbrook-act-green-initiatives' target='_self'>ACT Green Initiatives</a>
                             </div>
                         </div>
                     </div>
