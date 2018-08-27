@@ -391,7 +391,7 @@ function renderPromoDetails(container, template, collection){
             val.image_url = "";
         }
         
-        if (val.promo_image_url_abs.indexOf('missing.png') > 0) {
+        if(val.promo_image_url_abs.indexOf('missing.png') > -1){
             val.promo_image_show="display:none";
         }
         
