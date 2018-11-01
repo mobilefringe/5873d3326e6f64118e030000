@@ -12,50 +12,50 @@
     </div>
     <div id="page_body"></div>
     <div id="contact_form" class="hidden_now">
-        <form id="msg-contact" accept-charset="UTF-8" action="https://mobilefringe.createsend.com/t/d/s/tuktjk/"  enctype="multipart/form-data"  method="post">
-            <input id="cm-name" type="hidden" name="cm-name" />
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="cm-firstname">First Name*</label>
-                   <input class="contact-inputs" id="cm-firstname" name="cm-firstname" type="text" required/>
-                </div>
-                <div class="col-md-6">                
-                   <label for="cm-lastname">Last Name*</label>
-                    <input class="contact-inputs" id="cm-lastname" name="cm-lastname" type="text" required/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="email-newsletter">Email*</label>
-                    <input class="contact-inputs" id="email-newsletter" name="cm-tuktjk-tuktjk" type="email" required />
-                </div>
-                <div class="col-md-6">
-                   <label for="phoneNumber">Phone Number*</label>
-                   <input class="contact-inputs" id="phoneNumber" name="cm-f-jyjkht" type="text" required/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="cm-f-jyjkhi"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="g-recaptcha" data-sitekey="6LduhgITAAAAAOuswnYWavEr1XmVyd-L4iAz-ElA"></div>
-                    <div id="captcha_validation" style="color:red; margin-top:10px; margin-bottom:10px; font-weight:bold; display:none">
-                       Captcha is not valid!
-                    </div>     
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <input class="btn btn-success " name="commit" onclick="submitMSG()" value="Submit" style="width:355px; height: 55px;" />      
-                </div>
-            </div>
-            <div class="line_break"></div>
+        <!--<form id="msg-contact" accept-charset="UTF-8" action="https://mobilefringe.createsend.com/t/d/s/tuktjk/"  enctype="multipart/form-data"  method="post">-->
+        <!--    <input id="cm-name" type="hidden" name="cm-name" />-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-md-6">-->
+        <!--            <label for="cm-firstname">First Name*</label>-->
+        <!--           <input class="contact-inputs" id="cm-firstname" name="cm-firstname" type="text" required/>-->
+        <!--        </div>-->
+        <!--        <div class="col-md-6">                -->
+        <!--           <label for="cm-lastname">Last Name*</label>-->
+        <!--            <input class="contact-inputs" id="cm-lastname" name="cm-lastname" type="text" required/>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-md-6">-->
+        <!--            <label for="email-newsletter">Email*</label>-->
+        <!--            <input class="contact-inputs" id="email-newsletter" name="cm-tuktjk-tuktjk" type="email" required />-->
+        <!--        </div>-->
+        <!--        <div class="col-md-6">-->
+        <!--           <label for="phoneNumber">Phone Number*</label>-->
+        <!--           <input class="contact-inputs" id="phoneNumber" name="cm-f-jyjkht" type="text" required/>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-md-10">-->
+        <!--            <label for="message">Message*</label>-->
+        <!--            <textarea id="message" name="cm-f-jyjkhi"></textarea>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-md-10">-->
+        <!--            <div class="g-recaptcha" data-sitekey="6LduhgITAAAAAOuswnYWavEr1XmVyd-L4iAz-ElA"></div>-->
+        <!--            <div id="captcha_validation" style="color:red; margin-top:10px; margin-bottom:10px; font-weight:bold; display:none">-->
+        <!--               Captcha is not valid!-->
+        <!--            </div>     -->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-md-10">-->
+        <!--            <input class="btn btn-success " name="commit" onclick="submitMSG()" value="Submit" style="width:355px; height: 55px;" />      -->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="line_break"></div>-->
             <!-- Captcha END -->
-        </form>
+        <!--</form>-->
     </div>
 </div>
 <div class="mobile_line_break"></div>
